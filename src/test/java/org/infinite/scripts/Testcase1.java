@@ -12,8 +12,10 @@ public class Testcase1 extends StartBrowser {
         LoginPage loginPage=new LoginPage();
         LogOutPage logOutPage=new LogOutPage();
         loginPage.login();
+        System.out.println("Page launched");
         loginPage.assertDashboard("Swag Labs");
         logOutPage.LogOut();
+        System.out.println("Executed successfully");
     }
 
 
